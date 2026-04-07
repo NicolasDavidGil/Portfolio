@@ -1,37 +1,43 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Nicolas David Gil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+          integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Nicolas David Gil - Portfolio</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <!---MENU ENCABEZADO-->
-    <div class = "contenedor-header">
+    <div class="contenedor-header">
         <header>
             <div class="logo">
                 <a href="#">Nicolás</a>
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
-                </ul>                
+                    <li><a href="#inicio" onclick="seleccionar()" data-i18n="nav.home">HOME</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()" data-i18n="nav.about">ABOUT ME</a></li>
+                    <li><a href="#skills" onclick="seleccionar()" data-i18n="nav.skills">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()" data-i18n="nav.resume">RESUME</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()" data-i18n="nav.portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()" data-i18n="nav.contact">CONTACT</a></li>
+                </ul>
             </nav>
+            <div class="language-selector">
+                <button onclick="toggleLanguage()" id="lang-btn">
+                    <i class="fa-solid fa-globe"></i>
+                    <span id="lang-text">ES</span>
+                </button>
+            </div>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
-    </div>    
+    </div>
 
     <!-- SECCION INTRO-->
     <section id="inicio" class="inicio">
@@ -41,8 +47,8 @@
                 <img src="img/FotoPropia.jpg" alt="">
             </div>
             <h1>Nicolás David Gil</h1>
-            <h2>Estudiante de Programacion - UTN</h2>
-            <h2>Implementador de Software - RD-ITS</h2>
+            <h2 data-i18n="intro.student">Programming Student - UTN</h2>
+            <h2 data-i18n="intro.job">Software Implementer - RD-ITS</h2>
             <DIV class="redes">
                 <a id="iconFacebook" href="https://www.facebook.com/nicolas.gil.9" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                 <a id="iconLinkedin" href="https://www.linkedin.com/in/nicolasdavidgil/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
@@ -54,30 +60,33 @@
                     <li id="textGitHub">Git Hub</li>
                     <li id="textInstagram">Instagram</li>
                 </ul>
-            </DIV>            
+            </DIV>
         </div>
     </section>
 
     <!-- SECCION SOBRE MI-->
     <section id="sobremi" class="sobremi">
-        <div class="contenido-seccion">            
-            <h2>Sobre Mi</h2>
-            <p><span>Hola, soy Nicolas David Gil.</span> Soy estudiante de la carrera Tecnicatura Universitaria
-            en Programacion en la Universidad Tecnologica Nacional.             
-            Soy una persona proactiva, en busca de aprendizaje constante, detallista, buenas relaciones interpersonales.
-            Tras muchos años de trabajos en el area de logistica, comencé a explorar el mundo IT y decidí quedarme en el con la esperanza de poder encontrar en el mismo mi futuro.
-            Actualmente me desempeño como Implementador de Software para la empresa RD-ITS.</p>
+        <div class="contenido-seccion">
+            <h2 data-i18n="about.title">About Me</h2>
+            <p>
+                <span data-i18n="about.greeting">Hello, I'm Nicolas David Gil.</span> <span data-i18n="about.description">
+                    I'm a student of the University Technical Degree in Programming at the National Technological University.
+                    I'm a proactive person, constantly seeking learning, detail-oriented, with good interpersonal skills.
+                    After many years of working in logistics, I began exploring the IT world and decided to stay, hoping to find my future in it.
+                    Currently, I work as a Software Implementer for RD-ITS.
+                </span>
+            </p>
             <div class="fila">
                 <!-- datos personales-->
                 <div class="colum">
-                    <h3>Datos Personales</h3>
+                    <h3 data-i18n="about.personalData">Personal Data</h3>
                     <ul>
                         <li>
-                            <strong>Nacimiento</strong>
+                            <strong data-i18n="about.birth">Birth Date</strong>
                             17/10/1990
                         </li>
                         <li>
-                            <strong>Telefono</strong>
+                            <strong data-i18n="about.phone">Phone</strong>
                             +54 011-3113-2155
                         </li>
                         <li>
@@ -89,15 +98,15 @@
                             https://nicolasdavidgil.github.io/PortFolio/
                         </li>
                         <li>
-                            <strong>Ubicación</strong>
+                            <strong data-i18n="about.location">Location</strong>
                             Lomas de Zamora, Buenos Aires
                         </li>
                     </ul>
                 </div>
-            
+
                 <!--intereses-->
                 <div class="colum">
-                    <h3>Intereses</h3>
+                    <h3 data-i18n="about.interests">Interests</h3>
                     <div class="contenedor-intereses">
                         <div class="interes">
                             <i class="fab fa-edge"></i>
@@ -117,28 +126,30 @@
                         </div>
                         <div class="interes">
                             <i class="fa-solid fa-book"></i>
-                            <span>Libros</span>
+                            <span data-i18n="interest.books">Books</span>
                         </div>
                         <div class="interes">
                             <i class="fa-solid fa-gamepad"></i>
-                            <span>Juegos</span>
+                            <span data-i18n="interest.games">Games</span>
                         </div>
                         <div class="interes">
                             <i class="fa-solid fa-plane"></i>
-                            <span>Viajes</span>
+                            <span data-i18n="interest.travel">Travel</span>
                         </div>
                         <div class="interes">
                             <i class="fa-solid fa-headphones"></i>
-                            <span>Musica</span>
+                            <span data-i18n="interest.music">Music</span>
                         </div>
                     </div>
                 </div>
-            </div>    
-            <a class="button" href="../Portfolio/docs/CvNicolásGil.pdf" download="NicolasDavidGil" target="_blank">Descagar CV <i class="fa-solid fa-download"></i>
-            <span class="overlay"></span></a>           
+            </div>
+            <a class="button" href="../Portfolio/docs/CvNicolásGil.pdf" download="NicolasDavidGil" target="_blank" data-i18n="about.downloadCV">
+                Download CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </a>
             <!--<button>
-                Descagar CV <i class="fa-solid fa-download"></i>                
-                <span class="overlay"></span>                            
+                Descagar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
             </button>-->
         </div>
     </section>
@@ -146,11 +157,11 @@
     <!--SECCION SKILLS-->
     <section class="skills" id="skills">
         <div class="contenido-seccion">
-            <h2>Conocimientos</h2>
+            <h2 data-i18n="skills.title">Skills</h2>
             <div class="fila">
                 <!--Programacion-->
                 <div class="colum">
-                    <h3>Programacion</h3>
+                    <h3 data-i18n="skills.programming">Programming</h3>
                     <div class="skill">
                         <span>Javascript</span>
                         <div class="barra-skill">
@@ -210,9 +221,9 @@
                 </div>
                 <!--Profesionales-->
                 <div class="colum">
-                    <h3>Profesionales</h3>
+                    <h3 data-i18n="skills.professional">Professional</h3>
                     <div class="skill">
-                        <span>Comunicación</span>
+                        <span data-i18n="skill.communication">Communication</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>75%</span>
@@ -220,7 +231,7 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Trabajo en equipo</span>
+                        <span data-i18n="skill.teamwork">Teamwork</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>80%</span>
@@ -228,7 +239,7 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Creatividad</span>
+                        <span data-i18n="skill.creativity">Creativity</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>95%</span>
@@ -236,7 +247,7 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Dedicación</span>
+                        <span data-i18n="skill.dedication">Dedication</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>100%</span>
@@ -244,13 +255,13 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Manejo de Proyectos</span>
+                        <span data-i18n="skill.projectManagement">Project Management</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>95%</span>
                             </div>
                         </div>
-                    </div>         
+                    </div>
                 </div>
             </div>
         </div>
@@ -259,69 +270,69 @@
     <!--SECCION CV-->
     <section id="curriculum" class="curriculum">
         <div class="contenido-seccion">
-            <h2>Curriculum</h2>
+            <h2 data-i18n="resume.title">Resume</h2>
             <div class="fila">
                 <div class="colum izquierda">
-                    <h3>Educación</h3>
+                    <h3 data-i18n="resume.education">Education</h3>
                     <div class="item izquierdo">
-                        <h4>Tecnicatura Universitaria en Programacion</h4>
-                        <span class="casa">Universidad Tecnologica Nacional</span>
-                        <span class="fecha">2020 - Actualidad</span>
-                        <p>En curso, aprobacion superior al 50%</p>
+                        <h4 data-i18n="edu.tup">University Technical Degree in Programming</h4>
+                        <span class="casa" data-i18n="edu.utn">National Technological University</span>
+                        <span class="fecha">2020 - <span data-i18n="date.present">Present</span></span>
+                        <p data-i18n="edu.tupDesc">In progress, over 50% completion</p>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
-                    </div> 
+                    </div>
                     <div class="item izquierdo">
-                        <h4>Ingenieria Informática</h4>
-                        <span class="casa">Universidad Nacional de Avellanerda</span>
+                        <h4 data-i18n="edu.ingenieria">Computer Engineering</h4>
+                        <span class="casa" data-i18n="edu.undav">National University of Avellaneda</span>
                         <span class="fecha">2018 - 2020</span>
-                        <p>Cursados primeros dos años.</p>
+                        <p data-i18n="edu.ingDesc">Completed first two years.</p>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
-                    </div>                    
+                    </div>
                     <div class="item izquierdo">
-                        <h4>Ingles</h4>
-                        <span class="casa">Instituto de idiomas FISK</span>
+                        <h4 data-i18n="edu.english">English</h4>
+                        <span class="casa" data-i18n="edu.fisk">FISK Language Institute</span>
                         <span class="fecha">2012 - 2016</span>
-                        <p>Cursado hasta cuarto año.</p>
+                        <p data-i18n="edu.englishDesc">Completed up to fourth year.</p>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
-                    </div>  
-                </div>          
-                <!---->  
+                    </div>
+                </div>
+                <!---->
                 <div class="colum derecha">
-                    <h3>Experiencia Laboral</h3>
+                    <h3 data-i18n="resume.experience">Work Experience</h3>
                     <div class="item derecho">
-                        <h4>Implementador de Software</h4>
+                        <h4 data-i18n="exp.implementer">Software Implementer</h4>
                         <span class="casa">RD-ITS</span>
-                        <span class="fecha">2023 - Actualidad</span>
-                        <p>Desarrollo e implementación de Software privado</p>
+                        <span class="fecha">2023 - <span data-i18n="date.present">Present</span></span>
+                        <p data-i18n="exp.implementerDesc">Development and implementation of private Software</p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
-                    </div>   
+                    </div>
                     <div class="item derecho">
                         <h4>Freelancer</h4>
-                        <span class="casa">Negocio propio</span>
-                        <span class="fecha">2019 - Actualidad</span>
-                        <p>Desarrollo de aplicaciones con C# en .NET</p>
+                        <span class="casa" data-i18n="exp.ownBusiness">Own Business</span>
+                        <span class="fecha">2019 - <span data-i18n="date.present">Present</span></span>
+                        <p data-i18n="exp.freelancerDesc">Application development with C# on .NET</p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
-                    </div>   
+                    </div>
                     <div class="item izquierdo">
-                        <h4>Mantenimiento y reparación de PC</h4>
+                        <h4 data-i18n="exp.maintenance">PC Maintenance and Repair</h4>
                         <span class="casa">NK Soluciones</span>
                         <span class="fecha">2014 - 2023</span>
-                        <p>Formateos, salvado de datos, actualizaciones, depuraciones, cambios de hardware.</p>
+                        <p data-i18n="exp.maintenanceDesc">Formatting, data recovery, upgrades, troubleshooting, hardware changes.</p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
-                    </div>     
-                </div>   
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -335,12 +346,12 @@
         <img src="img/paginaPau.png" alt="">
     </section>
     <section id="aviso">
-        <h3 class="anunPort">Todos los proyectos se encuentran en mi repositorio de GitHub.</h3>
+        <h3 class="anunPort" data-i18n="portfolio.notice">All projects are available in my GitHub repository.</h3>
     </section>
     <!--SECCION CONTACTO-->
     <section id="contacto" class="contacto">
         <div class="contedido-seccion">
-            <h2>CONTACTO</h2>
+            <h2 data-i18n="contact.title">CONTACT</h2>
             <div class="fila">
                 <div class="colum">
                     <img src="img/Ubicacion.png" alt="">
