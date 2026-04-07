@@ -36,12 +36,13 @@ const translations = {
         
         // Intro
         'intro.student': 'Programming Student - UTN',
-        'intro.job': 'Software Implementer - RD-ITS',
+        'intro.job': 'Full Stack Developer - RD-ITS',
+        'intro.job2': 'Full Stack Developer - Cheyenne Organization',
         
         // About
         'about.title': 'About Me',
         'about.greeting': "Hello, I'm Nicolas David Gil.",
-        'about.description': "I'm a student of the University Technical Degree in Programming at the National Technological University. I'm a proactive person, constantly seeking learning, detail-oriented, with good interpersonal skills. After many years of working in logistics, I began exploring the IT world and decided to stay, hoping to find my future in it. Currently, I work as a Software Implementer for RD-ITS.",
+        'about.description': "A Full Stack Developer specialized in .NET, with over 5 years of experience building, modernizing, and implementing software solutions in production environments. I specialize in code refactoring and SQL query and stored procedure optimization, with a strong focus on improving performance, efficiency, and response times in critical applications. Currently, I work as a Full Stack Developer at RD-ITS, using .NET 10, Blazor, and SQL Server to design and develop scalable, business-oriented applications.<br> Previously, I led the implementation team in Argentina for 2 years, coordinating deployments, system integrations, and production rollouts, which allowed me to develop a strong end-to-end understanding of software delivery. In parallel, I have been working for over 3 years as a Full Stack Developer at Cheyenne Organization, maintaining and evolving legacy systems built with .NET Framework 4.5, ASP.NET Web Forms (ASPX), Bootstrap, and SQL Server. This experience strengthened my ability to handle legacy codebases, perform refactoring, and drive continuous improvements.<br>My profile combines strong technical expertise, hands-on experience with both modern and legacy technologies, and leadership capabilities. I focus on delivering robust, maintainable, and high-performance solutions aligned with business needs.",
         'about.personalData': 'Personal Data',
         'about.birth': 'Birth Date',
         'about.phone': 'Phone',
@@ -85,10 +86,10 @@ const translations = {
         // Experience
         'exp.implementer': 'Software Implementer',
         'exp.implementerDesc': 'Development and implementation of private Software',
-        'exp.ownBusiness': 'Own Business',
-        'exp.freelancerDesc': 'Application development with C# on .NET',
-        'exp.maintenance': 'PC Maintenance and Repair',
-        'exp.maintenanceDesc': 'Formatting, data recovery, upgrades, troubleshooting, hardware changes.',
+        'exp.ownBusiness': 'Full Stack Developer',
+        'exp.freelancerDesc': 'Application development with C# on .NET10 and Blazor Web Assembly',
+        'exp.maintenance': 'Full Stack Developer',
+        'exp.maintenanceDesc': 'CRM innovation and maintenance, with C# .NET4.5, bootstrap and SQL',
         
         // Portfolio & Contact
         'portfolio.notice': 'All projects are available in my GitHub repository.',
@@ -105,12 +106,14 @@ const translations = {
         
         // Intro
         'intro.student': 'Estudiante de Programación - UTN',
-        'intro.job': 'Implementador de Software - RD-ITS',
+        'intro.job': 'Desarrollador Full Stack - RD-ITS',
+        'intro.job2': 'Desarrollador Full Stack - Cheyenne Organization',
         
         // About
         'about.title': 'Sobre Mi',
         'about.greeting': 'Hola, soy Nicolas David Gil.',
-        'about.description': 'Soy estudiante de la carrera Tecnicatura Universitaria en Programación en la Universidad Tecnológica Nacional. Soy una persona proactiva, en busca de aprendizaje constante, detallista, buenas relaciones interpersonales. Tras muchos años de trabajos en el área de logística, comencé a explorar el mundo IT y decidí quedarme en él con la esperanza de poder encontrar en el mismo mi futuro. Actualmente me desempeño como Implementador de Software para la empresa RD-ITS.',
+        'about.description': 'Desarrollador Full Stack especializado en .NET, con más de 5 años de experiencia construyendo, modernizando e implementando soluciones de software en entornos de producción. Me especializo en refactorización de código y optimización de procedimientos almacenados y consultas SQL, con un fuerte enfoque en mejorar el rendimiento, la eficiencia y los tiempos de respuesta en aplicaciones críticas.Actualmente trabajo como Desarrollador Full Stack en RD-ITS, utilizando .NET 10, Blazor y SQL Server para diseñar y desarrollar aplicaciones escalables y orientadas a los negocios. Anteriormente, dirigí el equipo de implementación en Argentina durante 2 años, coordinando implementaciones, integraciones de sistemas e implementaciones de producción, lo que me permitió desarrollar una sólida comprensión de extremo a extremo de la entrega de software. Paralelamente, he trabajado durante más de 3 años como desarrollador Full Stack en Cheyenne Organization, manteniendo y evolucionando sistemas heredados creados con .NET Framework 4.5, ASP.NET Web Forms (ASPX), Bootstrap y SQL Server. Esta experiencia fortaleció mi capacidad para manejar bases de código heredadas, realizar refactorizaciones e impulsar mejoras continuas. Mi perfil combina una sólida experiencia técnica, experiencia práctica con tecnologías modernas y heredadas y capacidades de liderazgo. Me concentro en ofrecer soluciones sólidas, mantenibles y de alto rendimiento alineadas con las necesidades del negocio.',
+        
         'about.personalData': 'Datos Personales',
         'about.birth': 'Nacimiento',
         'about.phone': 'Teléfono',
@@ -153,11 +156,11 @@ const translations = {
         
         // Experience
         'exp.implementer': 'Implementador de Software',
-        'exp.implementerDesc': 'Desarrollo e implementación de Software privado',
-        'exp.ownBusiness': 'Negocio propio',
-        'exp.freelancerDesc': 'Desarrollo de aplicaciones con C# en .NET',
-        'exp.maintenance': 'Mantenimiento y reparación de PC',
-        'exp.maintenanceDesc': 'Formateos, salvado de datos, actualizaciones, depuraciones, cambios de hardware.',
+        'exp.implementerDesc': 'Desarrollo e Implementación de software privado',
+        'exp.ownBusiness': 'Desarrollador Full Stack',
+        'exp.freelancerDesc': 'Desarrollo de aplicaciones con C# en .NET10 y Blazor Web Assembly',
+        'exp.maintenance': 'Desarrollador Full Stack',
+        'exp.maintenanceDesc': 'Innovación y mantenimiento de CRM, con C# .NET4.5, bootstrap y SQL',
         
         // Portfolio & Contact
         'portfolio.notice': 'Todos los proyectos se encuentran en mi repositorio de GitHub.',
